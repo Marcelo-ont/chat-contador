@@ -2,6 +2,8 @@ import streamlit as st
 from openai import OpenAI
 
 st.set_page_config(page_title="Chat Contador de Palabras", page_icon="🐼")
+st.title("Chat Contador de Palabras")
+st.caption("Hecho por Massimo, Angel y Marcelo")
 
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 system_message = (
